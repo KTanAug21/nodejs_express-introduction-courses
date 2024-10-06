@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.21.0",
+    "joi": "^17.13.3",
+    "nodemon": "^3.1.7"
+  },
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "Sample demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --env-file=.env ."
+  },
+  "author": "",
+  "license": "ISC"
+}
