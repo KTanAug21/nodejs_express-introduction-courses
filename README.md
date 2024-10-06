@@ -11,13 +11,13 @@ Thank you to Programming with Mosh for the tutorial on NodeJS/Express, [here](ht
 4. Request parameters + body
 5. Data Validation using [JOI](https://joi.dev/)
 
-## Personal Touch
+## Personal Touch!
 Here are some key refactoring I've added:
 1. Exporting and importing from different modules
-1. Decoupled data operations+validation for the Course resource into a `resources/courses.js` module
-2. Extending the Error Class: Custom Error classes for reusable error classes: INVALID_INPUT_TYPE and NOT_FOUND, declared in `/errors.js` module
-3. Global error handler for handling custom error types and server error
-4. Create package.json start script to run `nodemon --env-file=.env .` to allow easy use of `npm start` to start the server
+2. Decoupled data operations+validation for the Course resource into a [resources/courses.js](https://github.com/KTanAug21/nodejs_express-introduction-courses/blob/master/resources/courses.js) module
+3. Extending the Error Class:  Reusable Custom Error classes, declared in [errors.js](https://github.com/KTanAug21/nodejs_express-introduction-courses/blob/master/errors.js) module
+4. [Global Error Handler Middleware](https://github.com/KTanAug21/nodejs_express-introduction-courses/blob/master/index.js#L80-L94) for a standardized response based on thrown errors
+5. Create package.json start script to run `nodemon --env-file=.env .` to allow easy use of `npm start` to start the server
 
 # Local Setup
 1. Run `npm install` to install the dependencies
